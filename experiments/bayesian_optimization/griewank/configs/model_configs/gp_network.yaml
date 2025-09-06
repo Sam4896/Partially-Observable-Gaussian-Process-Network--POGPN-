@@ -1,0 +1,20 @@
+# GP model configuration
+model_type:
+  name: GPNetwork
+  params:
+    likelihood: default
+    covar: default
+    mean: default
+    output_transform: none
+    input_transform: none
+    optimizer: default
+    mll: exact
+
+
+registry:
+  description: "GP network model as the EI-FN."
+
+
+mll_optimizer_kwargs:
+  options:
+    maxiter: 1000

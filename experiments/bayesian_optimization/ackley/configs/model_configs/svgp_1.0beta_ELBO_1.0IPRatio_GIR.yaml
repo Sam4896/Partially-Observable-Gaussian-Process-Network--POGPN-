@@ -1,0 +1,19 @@
+# GP model configuration
+model_type:
+  name: SVGP
+  params:
+    likelihood: default
+    covar: default
+    mean: default
+    output_transform: none
+    input_transform: none
+    optimizer: default
+    mll: ELBO
+    inducing_point_ratio: 1.0
+    mll_beta: 1.0
+    inducing_point_allocator: GreedyImprovementReduction
+
+
+mll_optimizer_kwargs:
+  options:
+    maxiter: 1000

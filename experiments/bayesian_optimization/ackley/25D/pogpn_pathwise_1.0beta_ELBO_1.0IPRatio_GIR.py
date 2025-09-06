@@ -1,0 +1,16 @@
+from experiments.bayesian_optimization.ackley.base_scripts.pogpn_common import (
+    run_pogpn_pathwise_elbo_gir,
+)
+import os
+
+if __name__ == "__main__":
+    run_pogpn_pathwise_elbo_gir(
+        exp_config_path=os.path.join(
+            "experiments",
+            "bayesian_optimization",
+            "ackley",
+            "configs",
+            "exp_configs",
+            "ackley_25D.yaml",
+        )
+    )

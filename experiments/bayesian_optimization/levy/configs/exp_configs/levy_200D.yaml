@@ -1,0 +1,24 @@
+# Base configuration for Bayesian optimization experiments
+simulation:
+  name: Levy
+  dim: 200
+  observation_noise_std: 0.1
+  process_stochasticity_std: 0.1
+  node_transforms:
+    y1: Standardize
+    y2: Standardize
+    y3: Standardize
+    y4: Standardize
+
+acqf_optim_params:
+  num_restarts: 2
+  raw_samples: 600
+  q: 1
+  qmc_sampler_sample_shape: 64
+  acqf_batch_limit: 2
+
+acqf_params:
+  acquisition_function_name: qLogExpectedImprovement
+  bo_budget: 100
+  num_trials: 3
+  num_initial_data_samples: 100

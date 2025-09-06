@@ -1,0 +1,16 @@
+# GP model configuration
+model_type:
+  name: STGP
+  params:
+    likelihood: default
+    covar: default
+    mean: default
+    output_transform: none
+    input_transform: none
+    optimizer: default
+    mll: exact
+
+
+mll_optimizer_kwargs:
+  options:
+    maxiter: 1000

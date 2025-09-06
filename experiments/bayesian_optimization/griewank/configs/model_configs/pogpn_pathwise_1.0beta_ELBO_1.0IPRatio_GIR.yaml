@@ -1,0 +1,17 @@
+model_type:
+  name: POGPN_Pathwise
+  params:
+    inducing_point_ratio: 1.0
+    mll_beta: 1.0
+    inducing_point_allocator: GreedyImprovementReduction
+    num_mc_samples: 32
+    likelihood: default
+    covar: default
+    mean: default
+    output_transform: none
+    input_transform: none
+    mll_type: ELBO
+
+mll_optimizer_kwargs:
+  optimizer: torch
+  lr: 2e-2
