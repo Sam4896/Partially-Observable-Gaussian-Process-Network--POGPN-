@@ -1,6 +1,6 @@
 # Partially Observable Gaussian Process Networks (POGPN)
 
-This repository contains the implementation of [Partially Observable Gaussian Process Networks (POGPN)]((https://arxiv.org/abs/2502.13905)) using BoTorch, along with a comprehensive framework for running Bayesian Optimization (BO) experiments.
+This repository contains the implementation of [Partially Observable Gaussian Process Networks (POGPN)](https://arxiv.org/abs/2502.13905) using BoTorch, along with a comprehensive framework for running Bayesian Optimization (BO) experiments.
 
 ## Getting Started
 
